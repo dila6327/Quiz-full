@@ -1,0 +1,32 @@
+.correct-contain{
+   
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.again-cont{
+  
+    width: 400px;
+}
+
+.result{
+    border:1px solid black;
+    color:white;
+    font-size: 20px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: crimson;
+}
+.again{
+    display: block;
+
+}

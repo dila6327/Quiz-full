@@ -1,9 +1,29 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './styles/Score.css';
 
-const Score = () => {
-  return (
-    <div>Score</div>
-  )
+interface ScoreProps {
+  correct: number;
+  setCorrect: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default Score
+const Score: React.FC<ScoreProps> = ({ correct, setCorrect }) => {
+  const Manage = () => {
+    setCorrect(0);
+  };
+
+  return (
+    <div className='again-cont'>
+      <Link to='/' className='again'>
+        <button onClick={Manage}>Play again</button>
+      </Link>
+      <div className='correct-contain'>
+        <div className='result'>
+          Your result {correct} out of {JSON.parse(localStorage.getItem('data') || '[]').length}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Score;

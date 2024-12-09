@@ -1,0 +1,23 @@
+.contain{
+    border:1px solid black;
+    height:300px;
+    width:350px;
+    border-radius: 20px;
+    background-color: rgb(235, 170, 183);
+}
+button{
+    display: block;
+    border:1px solid black;
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+    background-color: rgb(238, 214, 120);
+}
+.quest{
+    margin-bottom: 20px;
+    margin-top: 4px;
+    color:green;
+    font-size: 20px;
+text-align: center;
+font-weight: bold;
+}
